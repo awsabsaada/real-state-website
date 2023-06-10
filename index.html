@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- boxicons  ---->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!----- font awesome ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!----- swiperjs  ------>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.5.0/sql-wasm.js"></script>
+ 
+
+    <!------ custom stylesheet  -------->
+    <link rel="stylesheet" href="./styles.css" >
+    <title>real estate</title>
+</head>
+<body>
+    <!------ for scroll ----->
+    	
+	
+
+
+    <!-- header ----->
+    <header class="header">
+        <div class="navigation">
+            <div class="nav-center container d-flex">
+                <a href="" class="logo"><h1>OBAA Homes</h1></a>
+
+                <button id="bt">^</button>
+                
+                
+                
+
+                <ul class="nav-list d-flex">
+                    <li class="nav-item" ><a href="sad.html" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="https://www.youtube.com/watch?v=_02_Ac-i3uw&list=RD1qxTAJdKgJg&index=15" class="nav-link">shop</a></li>
+                    <li class="nav-item"><a href="https://www.youtube.com/watch?v=cnkkaP8POZg&list=RD1qxTAJdKgJg&index=19" class="nav-link">terms</a></li>
+                    <li class="nav-item"><a href="1.jpg" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="bx bx-menu-alt-left"></i>
+                  
+                </div>
+            </div>
+        </div>
+        
+        <!---- hero ----->
+        <div class="hero" data-type="conert" id="house " onkeyup="gettotal()">
+            <div class="swiper-container heroslider"data-type="conert">
+                <div class="swiper-wrapper"data-type="conert">
+                  <div class="swiper-slide">
+                    <img src="images/6.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/132.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/5.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="bx bx-chevron-right swiper-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="bx bx-chevron-left swiper-icon"></i>
+                </div>
+              </div>
+            
+        </div>
+        <div class="content">
+            <h1>find your dream home</h1>
+            <div  class="search">
+                <input onkeyup="gettotal()" id="saw" onkeyup="searchdata(this.value)" type="text" placeholder="type address, city, state">
+                <a href="" onclick="getsearchmood(this.id)" id="searchtitle">search</a>
+            </div>
+        </div>
+    </header>
+    <!-------- rent section  --------->
+    <section class="section rent" id="syria" onclick="getsearchmood(this.id)" id="searchcategory">
+        <div class="title">
+            <h1>properties For Rent</h1>
+            <p>search over 2000 properties to rent from the top agents in the country 
+            </p>
+        </div>
+      
+
+        <div class="rent-center container">
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/5.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/2.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/5.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/6.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/7.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------- grid properties  --------->
+    <section class="section grid-layout">
+      <div class="title">
+        <h1>popular properties</h1>
+      </div>
+      <div class="wrapper container">
+        <div class="box box1">
+            <img src="images/4.jpg" alt="">
+        </div>
+        <div class="box box2">
+            <img src="images/8.jpg" alt="">
+        </div>
+        <div class="box box3">
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div class="box box4">
+            <img src="images/6.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!------- contact---------->
+    <section class="section contact">
+        <div class="row">
+            <div class="col">
+               <h2>EXCELLENT SUPPORT</h2>
+               <P>We love our customers and they can reach us any time 
+                of day we will be at your service 
+               </P> 
+               <a href="" class="btn btn-1">contact</a>
+            </div>
+            <div class="col">
+                <form >
+                    <div>
+                        <input type="email" placeholder="Email Address">
+                        <a href="">send</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-------- rent section  --------->
+    <section class="section rent">
+        <div class="title">
+            <h1>discover our featured listings</h1>
+            <p>these featured listings contain exlusive real estate 
+                opportunities within the city 
+            </p>
+        </div>
+
+        <div class="rent-center container">
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/5.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/2.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/5.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/6.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top">
+                    <div class="overlay">
+                        <img src="images/7.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <P>Luxury villa in turky</P>
+                    <div>
+                        <span>$10000000</span>
+                        <span><i class="far fa-eye"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- footer ------>
+    <footer class="footer">
+        <div class="row">
+            <div class="col d-flex">
+                <h4>INFORMATION</h4>
+                <a href="">about us</a>
+                <a href="">contact</a>
+                <a href="">terms and condititons</a>
+                <a href="">shipping guide</a>
+            </div>
+            <div class="col d-flex">
+                <h4>USEFUL LINK</h4>
+                <a href="">online store</a>
+                <a href="">customer services</a>
+                <a href="">promotion</a>
+                <a href="">top brands</a>
+
+            </div>
+            <div class="col d-flex">
+                <span><i class="bx bxl-facebook-square"><a href=""></a></i></span>
+                <span><i class="bx bxl-instagram"></i></span>
+                <span><i class="bx bxl-github"></i></span>
+                <span><i class="bx bxl-twitter"></i></span>
+                <span><i class="bx bxl-whatsapp"></i>09554321132</span>
+
+            </div>
+        </div>
+    </footer>
+    <!---- swiperjs  ---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"> </script>
+    <!---- script ---->
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>
